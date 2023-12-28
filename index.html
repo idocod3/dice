@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lets play dice 🎲</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <body>
+      <div class="rules hide">
+        <strong>Game Rules</strong>
+        <p>Please read carefully.</p>
+        <ul>
+          <li class="lebel"></li>
+          <li>
+            If you roll the dice and you get 1, then your oponent will take
+            place.
+          </li>
+          <li>
+            Everytime you roll the dice what ever you score it will be added to
+            your pocket.
+          </li>
+          <li>
+            You can quite the game anytime by clicking the top button 'Reset'
+          </li>
+        </ul>
+        <span class="btn__go">Go</span>
+      </div>
+      <div class="form">
+        <input type="text" id="player__1--input" placeholder="Player 1 name" />
+        <input type="text" id="player__2--input" placeholder="Player 2 name" />
+        <input type="number" id="target" placeholder="Final Score" />
+
+        <button class="submit">Start</button>
+      </div>
+      <section class="hide">
+        <div class="reset">Reset</div>
+        <div class="me card">
+          <p class="player player__1"></p>
+          <p class="score me__score">0</p>
+        </div>
+        <div class="container">
+          <img src="./img/dice-1-.png" alt="" />
+        </div>
+        <div class="oponent card">
+          <p class="player player__2"></p>
+          <p class="score oponent__score">0</p>
+        </div>
+      </section>
+      <button class="btn hide">Roll dice</button>
+    </body>
+  </body>
+</html>
